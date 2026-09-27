@@ -21,7 +21,7 @@
                 return m;
             };
 
-    public static Object $delete = (java.util.function.Function<Object, Object>) (k) ->
+    public static Object delete = (java.util.function.Function<Object, Object>) (k) ->
         (java.util.function.Function<Object, Object>) (m) ->
             (java.util.function.Supplier<Object>) () -> {
                 ((java.util.Map<String, Object>) m).remove((String) k);
