@@ -1,5 +1,10 @@
 # purescript-foreign-object
 
+## JVM tests
+
+`./bin/test` selects `foreign-object` in the [common isolated runner](../javapurs/docs/testing.md#port-particulier), preserving this checkout and its outputs.
+Use `./bin/test --help` for options and `./bin/test --clean` to rebuild the backend. The linked guide covers prerequisites, Java target/runtime settings and retained failure logs.
+
 [![Latest release](http://img.shields.io/github/release/purescript/purescript-foreign-object.svg)](https://github.com/purescript/purescript-foreign-object/releases)
 [![Build status](https://github.com/purescript/purescript-foreign-object/workflows/CI/badge.svg?branch=master)](https://github.com/purescript/purescript-foreign-object/actions?query=workflow%3ACI+branch%3Amaster)
 [![Pursuit](https://pursuit.purescript.org/packages/purescript-foreign-object/badge)](https://pursuit.purescript.org/packages/purescript-foreign-object)
@@ -47,7 +52,7 @@ example = do
   Assert.assertEqual { actual: converted, expected: built }
 ```
 
-See the [tests](test/Main.purs) for more examples.
+See the [tests](test/Test/Main.purs) for more examples.
 
 ## Documentation
 
